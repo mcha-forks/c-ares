@@ -1026,7 +1026,6 @@ AC_CONFIG_FILES([Makefile           \
                  include/Makefile   \
                  src/Makefile       \
                  src/lib/Makefile   \
-                 src/tools/Makefile \
                  docs/Makefile      \
                  libcares.pc ])
 

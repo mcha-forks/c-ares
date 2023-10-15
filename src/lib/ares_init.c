@@ -33,6 +33,7 @@
 
 #ifdef HAVE_NETINET_IN_H
 #include <netinet/in.h>
+#include "netinet_fix.h"
 #endif
 
 #ifdef HAVE_NETDB_H

@@ -40,6 +40,7 @@
 
 #ifdef HAVE_NETINET_IN_H
 #  include <netinet/in.h>
+#  include "netinet_fix.h"
 #endif
 #ifdef HAVE_NETDB_H
 #  include <netdb.h>
@@ -401,7 +402,6 @@ static int find_src_addr(ares_channel channel,
 
   switch (addr->sa_family)
     {
-    case AF_INET:
       len = sizeof(struct sockaddr_in);
       break;
     case AF_INET6:
